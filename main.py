@@ -1,6 +1,8 @@
 import telebot
 import requests
 import json
+from keep_alive import keep_alive
+keep_alive()
 
 # Load configuration
 BOT_TOKEN = '7159519991:AAE9Y6362M1arKCE8UxONF1rqPurYw6klFw'
