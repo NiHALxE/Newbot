@@ -5,7 +5,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Load configuration
-BOT_TOKEN = '7159519991:AAFNaCFYnha2NL-O6mhgkw1sxT9l2f85bgU'
+BOT_TOKEN = ''
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Data structure to temporarily store input
