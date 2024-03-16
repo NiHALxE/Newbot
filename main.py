@@ -74,13 +74,13 @@ def check_scribd_premium(email, password):
 @bot.message_handler(commands=['start'])
 def handle_start(message):
     keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
-    keyboard.add(telebot.types.KeyboardButton('Chk Scribd'))
+    keyboard.add(telebot.types.KeyboardButton('Check Scribd✨'))
     bot.send_message(message.chat.id, "Let's check for Scribd Premium", reply_markup=keyboard)
 
 # Message handler for text input
 @bot.message_handler(content_types=['text'])
 def handle_input(message):
-    if message.text == 'Chk Scribd':
+    if message.text == 'Check Scribd✨':
         bot.send_message(message.chat.id, "Enter your email address:")
         user_data[message.chat.id] = {'state': 'email'}
     elif user_data.get(message.chat.id) and user_data[message.chat.id]['state'] == 'email':
